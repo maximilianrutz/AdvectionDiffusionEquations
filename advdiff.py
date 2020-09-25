@@ -10,7 +10,7 @@ import matplotlib.animation as animation
 import numpy as np
 
 # Physical length of square sides
-l = 10
+l = 12
 # Number of Grid points (multiple of 2 for FFT algorithm)
 m = 2 ** 8
 # Total simulation time
@@ -73,7 +73,7 @@ ims = []
 fig = plt.figure()
 plt.axis("off")
 for i in range(ww.shape[2]):
-    im = plt.imshow(ww[:, :, i], animated=True, cmap="coolwarm", aspect="auto")
+    im = plt.imshow(ww[:, :, i], animated=True, cmap="bwr", aspect="auto")
     ims.append([im])
 
 # create animation
