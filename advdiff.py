@@ -16,7 +16,7 @@ m = 2 ** 8
 # Total simulation time
 t_end = 15
 # Frames per second in animation
-fps = 5
+fps = 24
 
 
 def rhs_advdiff(t, wt_vec, nu, K, K_vec, m, kx, ky):
